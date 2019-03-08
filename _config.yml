@@ -100,7 +100,7 @@ service-worker: true
 friends: [
     {
         title: "GitHub",
-        href: "http://hithub.com/tianma0314"
+        href: "http://github.com/tianma0314"
     },{
         title: "CSDN",
         href: "https://blog.csdn.net/tianma0314"
