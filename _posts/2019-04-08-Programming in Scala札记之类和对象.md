@@ -29,4 +29,4 @@ val asc = new CheckSumAccumulator
 
 那么两个对象在内存的中映像如图所示：
 
-![class-field-in-memory][/img/class-field-in-memory.jpg]
+![class-field-in-memory](/img/class-field-in-memory.jpg)
