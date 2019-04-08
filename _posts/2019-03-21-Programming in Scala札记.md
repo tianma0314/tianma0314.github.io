@@ -60,7 +60,7 @@ println(oneTwoThreeFour)
 List(1, 2, 3, 4)
 ```
 
-###### 思考：
+###### 思考
 
 为什么List不支持append操作呢？因为append操作时间随着List变长而呈线性增长，而使用 :: 方法则消耗固定的时间，故若想获得一个可增长的列表，有如下两个方式：
 1. 利用 :: 方法将元素前缀进列表，然后调用reverse方法。
@@ -114,7 +114,7 @@ Tuple无法像List那样去访问元素，如someList(0)，这是因为List的ap
 Scala的API中包含了Set的基本特质（trait），这个概念类似于Java中的接口（Interface），同时该基本特质下还有两个子特质，分别是可变的和不可变的，这三个特质拥有同样的简化名，但是他们所在的包不同，
 而具体的Set类，如HashSet，则分别扩展（在Java中这叫做“实现”接口）了可变的和不可变的Set特质
 
-###### 创造、初始化和使用不可变Set
+###### 使用不可变Set
 
 代码-code04：
 ```scala
@@ -135,7 +135,7 @@ class scala.collection.immutable.Set$Set3
 jetSet = jetSet + "Lear"
 ```
 
-###### 创造、初始化和使用可变Set
+###### 使用可变Set
 
 由上面可知Scala默认创建不可变Set，若想创建可变Set，则需要引用可变Set，代码-code05示例如下：
 
@@ -160,7 +160,7 @@ movieSet.+=("Piano")
 
 Map的继承结构与Set类似，也是有可变与不可变的两个特质（trait），并且若不指定哪种Map的话，默认创建不可变Map，这里不再详细介绍。
 
-###### 创建、初始化和使用可变Map
+###### 使用可变Map
 
 ```scala
 import scala.collection.mutable.Map
@@ -175,5 +175,9 @@ println(treasureMap(2))
 // 输出为
 B
 ```
+
+## 总结
+
+    
 
 
