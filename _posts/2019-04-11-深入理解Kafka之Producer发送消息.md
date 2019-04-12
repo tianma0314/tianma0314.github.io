@@ -52,6 +52,13 @@ public class KafkaProducerTest {
 
 上边的例子中，我们只设置了bootstrap.servers，key.serializer，value.serializer这三个属性，就能够让Producer找到Kafka集群并将消息正确地发送至集群，但是其实关于Producer重要的属性还有其他几项，下面的列表中列出了KafkaProducer重要的配置项及其作用、默认值等。
 
+
+<style>
+table th:nth-of-type(2) {
+	width: 100px;
+}
+</style>
+
 属性名称   |描述    |默认值
 :----------|:-------|:---------------
 bootstrap.servers|连接Kafka集群的主机名:端口号列表，理论上来讲，你可以只填写集群中的一个broker主机地址+端口号即可，因为这个配置只是用来初始化连接，找到其中一个Broker，其他的便可以通过zk来发现。但通常我们会把集群的Broker都写上，万一只写一个，而那个Broker挂了呢|默认没有值，必填
