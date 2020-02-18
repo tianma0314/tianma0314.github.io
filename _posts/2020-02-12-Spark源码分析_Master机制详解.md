@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      Spark源码剖析_Master机制详解（基于2.2.0版本）
+subtitle:   主备切换，注册，状态改变，资源调度
+date:       2020-02-12
+author:     walker
+header-img: img/scala-1.jpg
+catalog: true
+tags:
+    - Spark
+    - 源码
+---
+
 # Spark源码剖析_Master机制详解（基于2.2.0版本）
 
 
